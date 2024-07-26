@@ -1,0 +1,39 @@
+connect n00dles         ; backdoor;
+home;
+
+connect foodnstuff      ; backdoor;
+home;
+
+connect sigma-cosmetics ; backdoor;
+connect nectar-net; backdoor;
+connect  phatasy; backdoor;
+home;
+
+connect joesguns        ; backdoor;
+connect max-hardware; backdoor
+   connect max-hardware  ; backdoor;
+   connect computek      ; backdoor;
+      connect catalyst; backdoor;
+         connect rho-construction; backdoor;
+            connect aerocorp; backdoor;
+   connect netlink       ; backdoor;
+   connect crush-fitness ; backdoor;
+   connect avmnite-02h; backdoor;
+      connect summit-uni; backdoor;
+home;
+
+connect hong-fang-tea   ; backdoor;
+connect CSEC; backdoor;
+   connect neo-net; backdoor;
+   connect the-hub       ; backdoor;
+   connect johnson-ortho; backdoor;
+home;
+
+connect harakiri-sushi  ; backdoor;
+
+home;
+
+connect iron-gym ; backdoor;
+
+home;
+
