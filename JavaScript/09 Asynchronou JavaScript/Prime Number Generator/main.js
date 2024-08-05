@@ -11,24 +11,36 @@ function isPrime(num){
    return true;
 }
 
-function generatePrimes(){
+let primesPromise= ()=> new Promise(resolve=>{
+   numberOfPrimes = +input.value
    let count = 0;
-   numberOfPrimes = input.value;
-   for(let i = 2; count < numberOfPrimes; i++){
-      if(isPrime(i)) {
-         primes.textContent += i + " ";
-         count++;
-         console.table(count,i);
+   let result= "";
+   let i = 2;
+   setInterval(()=>{
+      let breakCount = count + 100;
+      for(i; count<breakCount && count < numberOfPrimes;i++){
+         if(isPrime(i)) {
+            result += i + " ";
+            count++;
+            console.log(count,i);
+            
+         };
       }
-   }
-   output.textContent = "finished calculating primes"
+      if(count == numberOfPrimes) resolve(result);
+   },100)
+});
 
+async function generatePrimes(){
+   primes.textContent = "calculating";
+   primesPromise()
+   .then((result)=>{
+      primes.textContent += result;
+   })
+   .then(()=>output.textContent = "finished calculating primes");
 }
 
-
-
 const generatePrimesbutton = document.querySelector("#generate");
-generatePrimesbutton.addEventListener("click", ()=> generatePrimes())
+generatePrimesbutton.addEventListener("click", generatePrimes)
 
 const reload = document.querySelector("#reload");
 reload.addEventListener("click", ()=>{
