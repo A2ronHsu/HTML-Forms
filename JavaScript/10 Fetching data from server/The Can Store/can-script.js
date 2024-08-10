@@ -44,7 +44,7 @@ fetch('products.json')
          lastCategory = category.value;
          lastSearch = searchTerm.value.trim();
          if(category.value === "All"){
-            category = products;
+            categoryGroup = products;
             selectProduct();
          }else{
             const lowerCaseType = category.value.toLowerCase();
