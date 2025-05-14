@@ -1,0 +1,46 @@
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100vw;
+   height: 100vh;
+}
+
+form{
+   padding: 1em;
+   border: 1px solid;
+   border-radius: 20px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em 0 1em;
+}
+
+li {
+   display: flex;
+   justify-content: space-between;
+   gap:3em;
+   margin: 1em 0 0 0;
+   align-items: center;
+}
+
+li > label {
+   align-self: start;
+   width: 80px;
+   flex-shrink: 0;
+}
+
+li > input, li > textarea, li > button {
+   min-width: 200px;
+   flex-grow: 1;
+}
+
+li > textarea {
+   width: 100%;
+   height: max-content;
+   overflow: hidden;
+   
+}
