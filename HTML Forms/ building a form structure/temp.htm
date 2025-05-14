@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+   <link rel="stylesheet" href="./temp.css">
+</head>
+
+<body>
+   <form action="./" method="post">
+      <h1>Payment form</h1>
+      <p>required fields are followed by <strong>*</strong></p>
+      <h2>Contact information</h2>
+      <fieldset>
+         <legend>Title</legend>
+         <ul>
+            <li>
+               <label for="king">
+                  <input type="radio" id="king" name="title" value="king">
+                  King
+               </label>
+            </li>
+            <li>
+               <label for="queen">
+                  <input type="radio" id="queen" name="title" value="queen">
+                  Queen
+               </label>
+           </li>
+            <li>
+               <label for="ace">
+                  <input type="radio" id="ace" name="title" value="ace">
+                  Ace
+               </label>
+            </li>
+         </ul>
+
+
+      </fieldset>
+
+      <div class="contact-info">
+         <label for="name">Name:*
+            <input type="text" id="name">
+
+         </label>
+         
+         <label for="email">Email:*
+            <input type="email" name="email" id="email">
+
+         </label>
+         
+         <label for="password">Password:*
+            <input type="password" name="password" id="password">
+         </label>
+      </div>
+
+      <h2>Payment information</h2>
+
+      <label for="cardTipe">Card Type:*
+         <select id="cardTipe">
+            <option value="visa">visa</option>
+            <option value="master">master</option>
+            <option value="american">American Express</option>
+         </select>
+
+      </label>
+
+      <label for="cardNumber">Card Number:*
+         <input type="num">
+
+      </label>
+
+      <label for="exprirationDate">Expiration Date:*
+         <input type="date" name="exprirationDate" id="exprirationDate">
+
+      </label>
+
+      <button type="submit">Validate Payment</button>
+   </form>
+</body>
+
+</html>
