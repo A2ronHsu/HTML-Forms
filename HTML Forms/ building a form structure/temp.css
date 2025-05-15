@@ -11,26 +11,59 @@ body{
 }
 
 form {
-   display: flex;
+   display: flex; 
    flex-direction: column;
    align-items: center;
    max-width: 1000px;
    border: 1px solid;
+   border-radius: 5%;
    padding: 5em;
    gap: .2em;
-
+   
 }
 
 
 fieldset{
    min-width: 100%;
-   
 }
 
 ul {
    list-style: none;
 }
 
-label  {
-   display: block;
+.contact-info {
+   display: flex;
+   flex-direction: column;
+   width: 100%;   
+   gap: .2em;
+
 }
+
+.contact-info > label{
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+}
+
+.payment-info{
+   display: flex;
+   flex-direction: column ;
+   width: 100%;
+   gap: .2em;
+}
+
+.payment-info>label{
+   display: flex;
+   justify-content: space-between;
+   
+}
+
+.payment-info>label>input, .payment-info>label>select{
+   border : 1px solid;
+   width: 120px;
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   
+}
+

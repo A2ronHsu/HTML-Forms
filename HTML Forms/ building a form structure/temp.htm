@@ -10,30 +10,24 @@
 </head>
 
 <body>
-   <form action="./" method="post">
-      <h1>Payment form</h1>
-      <p>required fields are followed by <strong>*</strong></p>
-      <h2>Contact information</h2>
+   <h1>Payment form</h1>
+   <p>required fields are followed by <strong>*</strong></p>
+   <h2>Contact information</h2>
+   <form action="./" method="get">
       <fieldset>
          <legend>Title</legend>
          <ul>
             <li>
-               <label for="king">
-                  <input type="radio" id="king" name="title" value="king">
-                  King
-               </label>
+               <input type="radio" id="king" name="title" value="king">
+               <label for="king">King</label>
             </li>
             <li>
-               <label for="queen">
-                  <input type="radio" id="queen" name="title" value="queen">
-                  Queen
-               </label>
-           </li>
+               <input type="radio" id="queen" name="title" value="queen">
+               <label for="queen">Queen</label>
+            </li>
             <li>
-               <label for="ace">
-                  <input type="radio" id="ace" name="title" value="ace">
-                  Ace
-               </label>
+               <input type="radio" id="ace" name="title" value="ace">
+               <label for="ace">Ace</label>
             </li>
          </ul>
 
@@ -45,37 +39,40 @@
             <input type="text" id="name">
 
          </label>
-         
+
          <label for="email">Email:*
             <input type="email" name="email" id="email">
 
          </label>
-         
+
          <label for="password">Password:*
             <input type="password" name="password" id="password">
          </label>
       </div>
 
       <h2>Payment information</h2>
+      <div class="payment-info">
 
-      <label for="cardTipe">Card Type:*
-         <select id="cardTipe">
-            <option value="visa">visa</option>
-            <option value="master">master</option>
-            <option value="american">American Express</option>
-         </select>
+         <label for="cardTipe">Card Type:*
+            <select id="cardTipe">
+               <option value="visa">visa</option>
+               <option value="master">master</option>
+               <option value="american">American Express</option>
+            </select>
 
-      </label>
+         </label>
 
-      <label for="cardNumber">Card Number:*
-         <input type="num">
+         <label for="card-number">Card Number:*
+            <input type="tel" name="card-number" id="card-number">
 
-      </label>
+         </label>
 
-      <label for="exprirationDate">Expiration Date:*
-         <input type="date" name="exprirationDate" id="exprirationDate">
+         <label for="exprirationDate">Expiration Date:*
+            <input type="text" id="expiration" name="expiration" required placeholder="MM/YY"
+               pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$" />
 
-      </label>
+         </label>
+      </div>
 
       <button type="submit">Validate Payment</button>
    </form>
